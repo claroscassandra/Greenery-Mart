@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="GMC FAVICON CLEAR.png">
+  <title>Greenery Website</title>
+  <link href="layout.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+        <img class="homeminilogo" src="GMC RBG FINAL.svg" viewBox="125.35 221.54 1500.66 523.25" >
+
+    </a>
+    <div class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <nav class="menu-container"> 
+      <div class="menu">
+        <a href="index.html">About</a>
+        <a href="brands.html">Brands</a>
+        <a href="careers.html">Careers</a>
+        <a href="contactus.html">Contact Us</a>
+
+      </div> 
+    </nav> 
+  </header>
+  
+
+  <div id="About" class="section2brandingver">
+    <div>
+        <img class="delights" src="Greenery Delight Logo copy (1).svg">
+    </div>
+    <div>
+      <section id="aboutus">
+        <p>          
+          <div class="container">
+            Brands  
+          </div> 
+          We are committed to selling the highest quality products that come from our reputable suppliers and from our house brand, Greenery Delights. Products under the Greenery Delights line include refined sugar, brown sugar, cooking oil, flour and margarine.
+          </p>
+      </section>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<br>
+  <div class="carousel">
+    <div class="container">
+        Brands That We Distribute
+      </div> 
+      <br>
+
+      <div class="marquee marquee">
+        <div class="marquee-content">
+        
+        <img class="marquee__item" src="Rebisco_wordmark.png" alt="rebisco">
+        <img class="marquee__item" src="Mondelez-Logo.png" alt="Mondelez">
+        <img class="marquee__item" src="Monde_Nissin_logo.svg.png" alt="Mondenisin">
+        <img class="marquee__item" src="Saba.png" alt="Saba">
+        <img class="marquee__item" src="Oishi_logo.webp" alt="Oishi">
+        <img class="marquee__item" src="Argentina.png">
+        <img class="marquee__item" src="Coca-Cola_logo.svg">
+        </div>
+    </div>
+    <br>
+      </div>
+      
+
+  </div>
+
+
+
+ 
+  <div id="contactlower" class="section4">
+    <div class="contact-left">
+      <p>
+        <div class="containerhead4">
+          Contact Us  
+        </div> 
+        <br>
+        <br>
+        <div class="containersubhead4">
+          Landline  
+        </div> 
+        <a href="tel:+63 36 289 2499">+63 36 289 2499</a><br><a href="tel:+63 36 289 2588">+63 36 289 2588</a>
+                <br>
+        <br>
+        <div class="containersubhead4">
+          email  
+        </div> 
+        info@greenerymart.com
+        <div class="containersubhead4">
+          Facebook  
+        </div> 
+        facebook.com/greenerymartcorporation
+        </p>
+    </div>
+    <div class="contact-right">
+      <p>
+        <div class="containerhead4">
+          Address  
+        </div> 
+        <br>
+        Greenery Mart, National Highway, Laguinbanwa, Ibajay, Aklan, Philippines, 5613
+      </p>
+    </div>
+
+  </div>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const menuContainer = document.querySelector('.menu-container');
+
+    hamburger.addEventListener('click', () => {
+        menuContainer.classList.toggle('active');
+    });
+
+    const root = document.documentElement;
+    const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+    const marqueeContent = document.querySelector("div.marquee-content");
+
+    root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+    for(let i=0; i<marqueeElementsDisplayed; i++) {
+    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+    }
+
+</script>
+</body>
+</html>
