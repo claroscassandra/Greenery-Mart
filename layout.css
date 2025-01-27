@@ -37,6 +37,22 @@
         width: 160px;
 
     }
+    .lowerightlogo{
+        float: right;
+        padding-top: 150px;
+        
+    }
+
+  
+
+    .Biglogocenter {
+        height: auto;
+        object-fit: contain;
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+
+    }
 
     .menu-container {
         float: right;
@@ -64,8 +80,11 @@
     .hamburger {
         display: none;
     }
+
     
     @media (max-width: 768px) {
+
+
         .menu-container {
             display: none;
             position: absolute;
@@ -103,83 +122,94 @@
 
         .pushcart {
             max-width: 100%;
+            height: fit-content;
+            display: block;
           }
 
         .province {
-            width: 100%;
             height: auto;
             object-fit: contain;
+            max-width: 80%;
+            display: block;
+            margin: 0 auto;
           }
         .delights {
-            max-width: 100%;
+            max-width: 80%;
+            height: fit-content;
+            display: block;
           }
 
         .careers {
             max-width: 100%;
+            height: fit-content;
+            display: block;
           }
-        
+
+        .mobile-iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .desktop-iframe {
+            display: none;
+        }
     }
+        
+ 
+        
+
 
      /* end of nav bar edits */
     
     /* index docs */
     .responsive-two-column-grid {
-        display:grid;
-        justify-content: space-between;
-        height: fit-content;
-        padding: 20px;
-        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr;
         background-color: #215621;
-        
-    }
-
-    .responsive-two-column-grid > * {
-        min-height: 100vh;
+        width: 100%;
         margin: 0;
         padding: 0;
-        width: 100%;
+        overflow: visible; /* Allow content to flow naturally */
+    }
+    
+    .responsive-two-column-grid > * {
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
         color: white;
-        padding-top: 150px;
-
+        width: 100%;
+        height: auto; /* Allow content to determine height */
     }
+    
 
     #logomain{
-        padding: 40;
-        padding-top: 200px;
+        padding-top: 50px;
         width: 100%;
+        object-fit: contain;
+
 
       }
 
 
-    #logomain svg {
-        width: 100%;
-        height: auto;
-        min-width: 300px;
-        overflow: visible;
-
-    }
-
     #tagline{
         text-align:left;
-        margin-left: 10;
-        margin-right: 30;
-        padding-top: 0px;
-        padding-bottom: 50px;
-        padding-right: 50px;
-        padding-left: 50px;
-        width: 80%;
-        font-size: 0px;
+        width: 100%;
         color: white;
         font-weight: bold;
+        display: block;
+        padding:50px;
+        font-size: clamp(1rem, 4vw, 2rem);
+        word-wrap: break-word;
     }
 
-    .word1 { font-family: 'Open Sans', sans-serif; font-size:50px ; }
-    .word2 { font-family: "Patrick Hand", sans-serif ; font-size:80px; }
-    .word3 { font-family: 'Open Sans', sans-serif; font-size:50px}
-    .word4 { font-family: "Patrick Hand", sans-serif; font-size:80px;}
-    .word5 { font-family: 'Open Sans', sans-serif;  font-size:50px}
-    .word6 { font-family: "Patrick Hand", sans-serif;font-size:80px; }
+  
+
+    .word1 { font-family: 'Open Sans', sans-serif; font-size:30px  }
+    .word2 { font-family: "Kalam", sans-serif ; font-size:50px }
+    .word3 { font-family: 'Open Sans', sans-serif; font-size:30px}
+    .word4 { font-family: "Kalam", sans-serif; font-size:50px;}
+    .word5 { font-family: 'Open Sans', sans-serif;  font-size:30px}
+    .word6 { font-family: "Kalam", sans-serif;font-size:50px; }
 
     .pushcart {
         width: 730px;
@@ -187,17 +217,6 @@
         display: grid;
 
     }
-
-    #aboutus {
-        display:flex;
-        padding-top: 80px;
-        margin:auto;
-        width:80%;
-        flex-direction: column;
-        font-size: 20px;
-        margin-bottom: 0 
-        
-        }
 
 
         
@@ -214,54 +233,66 @@
 
             }
 
+    
+
     .section2 {
-        display:grid;
-        background-color: #F1F1F1;
-        
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: white;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Allow content to flow naturally */
     }
-
-  
+    
     .section2 > * {
-        min-height: 100vh;
         margin: 0;
-        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto; /* Allow content to determine height */
     }
 
+    #aboutus {
+        display:flex;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
 
-    .section3main {
-        background-color: #BB5D1E;
-        margin: 0;
-        padding: 0;
+        margin:auto;
+        width:80%;
+        flex-direction: column;
+        font-size: 20px;
         
-    }
+        }
+
 
     
-    .section3 {
-        display: -ms-inline-grid;
-        justify-content: space-between;
-        height: auto;
-        padding-top: 10px;
-        overflow: hidden;
+    .section3main {
+        display: grid;
+        grid-template-columns: 1fr;
         background-color: #BB5D1E;
-        margin-bottom: 0;
-    }
-
-
-    .section3 > div {
         width: 100%;
-        margin: 20px;
-        box-sizing: border-box;
-        color: white;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Allow content to flow naturally */
+        }
         
+    .section3 > * {
+        margin: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto; /* Allow content to determine height */
+        color: white;
     }
+
 
     .province {
-        height: 600px;
+        height: fit-content;
         width: auto;
 
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
 
     }
 
@@ -301,7 +332,6 @@
         display: grid;
         justify-content: space-between;
         height: auto;
-        padding: 20px;
         overflow: hidden;
         background-color: #215621;
 
@@ -309,11 +339,14 @@
     
     #contactlower.section4 > div {
         width: 100%;
-        margin: 30px;
+        padding: 50px;
         box-sizing: border-box;
         color: white;
         
+
     }
+  
+
 
 
 
@@ -340,16 +373,17 @@
         display: block;
         justify-content: space-between;
         height: auto;
-        padding: 70px;
+        padding: 50px;
         font-size: 20px;
         overflow: hidden;
         background-color: #BB5D1E;
     }
+
+    
     
     /* Column containers */
     .careersdesc > div {
         width: 100%;
-        margin: 30px;
         box-sizing: border-box;
         color: white;
         bottom: -200px;
@@ -359,12 +393,7 @@
         
     }
 
-    /* columns */
-    .careersdesc > * {
-        min-height: 100vh;
-        margin: 0;
-        padding: 0;
-    }
+
 
     .hrreqs {
         padding-left: 30px;
@@ -377,20 +406,45 @@
 
 
         .responsive-two-column-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            padding-top: 0px;
-
-            
-
+            grid-template-columns: 1fr 1fr; /* Let content determine first column width */
+            align-items: start; /* Align items to top */
         }
-        #tagline {
-            padding-left: 50px;
-            padding-top:0px;
+
+        
+        .responsive-two-column-grid > * {
+            padding-top: 30px; /* Larger padding for desktop */
+            border: none; /* Remove borders from child elements */
+            outline: none; /* Remove any outlines */
+            }
+
+        #aboutus{
+            padding-top: 50px; /* Larger padding for desktop */
         }
+
+        #tagline{
+            padding: 30px
+        }
+
+
+            .word1 { font-family: 'Open Sans', sans-serif; font-size:50px  }
+            .word2 { font-family: "Kalam", sans-serif ; font-size:80px }
+            .word3 { font-family: 'Open Sans', sans-serif; font-size:50px}
+            .word4 { font-family: "Kalam", sans-serif; font-size:80px;}
+            .word5 { font-family: 'Open Sans', sans-serif;  font-size:50px}
+            .word6 { font-family: "Kalam", sans-serif;font-size:80px; }
+
+        #logomain{
+                padding-top: 160px;
+                padding-left: 10vw;
+                width: 100%;
+
+            }
+
+
         .section2 {
-            display: grid;
             grid-template-columns: 1fr 1fr;
+            border: none; /* Remove borders from child elements */
+            outline: none; /* Remove any outlines */
 
         }
 
@@ -401,16 +455,26 @@
         }
         .section3 {
             display: grid;
+
             grid-template-columns: 1fr 1fr 1fr;
+    
 
         }
         .section4 {
             display: grid;
             grid-template-columns: 1fr 1fr;
-
         }
 
-    }
+
+        .careersdesc {
+            padding: 70px;
+        }
+
+        .mobile-iframe {
+            display: none;
+        }
+        
+        }
 
 
 
@@ -418,9 +482,17 @@
 
     .carousel{
         font-size: 20px;
-        text-align: center;
-        
+        text-align: center;        
         }
+
+    .carousel .container{
+        padding: 40px;
+    }
+
+    .carousel p{
+        padding: 40px;
+    }
+
 
         :root {
             --marquee-width: 100vw;
@@ -486,7 +558,7 @@
             border: 5px solid #eee;
           }
           
-          @media (max-width: 600px) {
+          @media (max-width: 768px) {
             html { font-size: 12px; }
             :root {
               --marquee-width: 100vw;
@@ -498,6 +570,8 @@
 
     .container{
         font-size: 3em;
+        font-weight: bold;
+        word-spacing: 50;
         
             
             }
@@ -514,7 +588,7 @@
     
 
     .containerhead4{
-            font-size: 30px;
+            font-size: 35px;
             font-weight: bold;
             color: white;
             text-align:left;
@@ -523,7 +597,6 @@
         
     .containersubhead4{
             font-size: 25px;
-            font-weight:bold;
             color: white;
             text-align:left;
             }
@@ -532,13 +605,11 @@
             
     
     a[href^="tel:"] {
-        /* Your styles here */
         color: white;
         text-decoration: none;
-
-
-
       }
+
+
 
 
 
